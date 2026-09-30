@@ -1,0 +1,40 @@
+case_name: demo_case
+
+# All values in this file are nondimensional demonstration values. They are
+# deliberately different from the manuscript-production configurations.
+domain:
+  length_x: 2.0
+  length_y: 1.2
+  cells_x: 80
+  cells_y: 48
+
+material:
+  young_modulus: 1.0
+  poisson_ratio: 0.25
+  fracture_toughness: 0.002
+  regularization_length: 0.035
+  residual_stiffness: 1.0e-6
+  biot_coefficient: 0.55
+
+flow:
+  storage: 1.0
+  matrix_permeability: 0.002
+  fracture_permeability: 0.05
+  viscosity: 1.0
+  source_amplitude: 2.5
+  source_width: 0.09
+
+time:
+  step_size: 0.02
+  number_of_steps: 60
+  staggered_tolerance: 1.0e-5
+  staggered_max_iterations: 25
+  output_interval: 5
+
+precrack:
+  half_length: 0.18
+  center_x: 0.0
+  center_y: 0.0
+
+output:
+  directory: outputs/demo_case

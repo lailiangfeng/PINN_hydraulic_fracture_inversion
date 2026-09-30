@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article after publication."
+title: "FEniCSx Phase-Field Hydraulic-Fracture Demo"
+type: software
+authors:
+  - family-names: "Lai"
+    given-names: "Liangfeng"
+    orcid: "https://orcid.org/0009-0009-9369-7989"
+version: 0.1.0
+date-released: 2026-09-30
+license: LicenseRef-Proprietary

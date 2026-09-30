@@ -1,0 +1,12 @@
+name: hf-phasefield-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - fenics-dolfinx=0.8.*
+  - mpich
+  - mpi4py
+  - petsc4py
+  - numpy>=1.26
+  - pyyaml>=6.0
+  - pip
