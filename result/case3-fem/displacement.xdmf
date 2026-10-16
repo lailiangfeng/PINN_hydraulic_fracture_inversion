@@ -1,0 +1,688 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="mesh" GridType="Uniform">
+      <Topology TopologyType="Triangle" NumberOfElements="211422" NodesPerElement="3">
+        <DataItem Dimensions="211422 3" NumberType="Int" Format="HDF">displacement.h5:/Mesh/mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XY">
+        <DataItem Dimensions="106312 2" Format="HDF">displacement.h5:/Mesh/mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Displacement" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.0050000000000000001" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_0050000000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.10500000000000002" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_10500000000000002</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.2050000000000001" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_2050000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.30500000000000016" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_30500000000000016</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.40500000000000025" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_40500000000000025</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.50500000000000034" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_50500000000000034</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.60500000000000043" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_60500000000000043</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.70500000000000052" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_70500000000000052</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.8050000000000006" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_8050000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.90500000000000069" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/0_90500000000000069</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.0050000000000006" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_0050000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.1049999999999984" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_1049999999999984</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.2049999999999963" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_2049999999999963</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3049999999999942" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_3049999999999942</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.404999999999992" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_404999999999992</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5049999999999899" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_5049999999999899</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6049999999999878" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_6049999999999878</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7049999999999856" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_7049999999999856</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.8049999999999835" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_8049999999999835</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9049999999999814" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/1_9049999999999814</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0049999999999795" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_0049999999999795</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.1049999999999773" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_1049999999999773</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.2049999999999752" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_2049999999999752</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.3049999999999731" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_3049999999999731</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.4049999999999709" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_4049999999999709</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.5049999999999688" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_5049999999999688</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.6049999999999667" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_6049999999999667</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.7049999999999645" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_7049999999999645</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.8049999999999624" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_8049999999999624</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.9049999999999603" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/2_9049999999999603</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.0049999999999581" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_0049999999999581</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.104999999999956" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_104999999999956</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.2049999999999539" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_2049999999999539</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.3049999999999518" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_3049999999999518</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.4049999999999496" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_4049999999999496</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.5049999999999475" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_5049999999999475</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6049999999999454" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_6049999999999454</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7049999999999432" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_7049999999999432</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8049999999999411" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_8049999999999411</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.904999999999939" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/3_904999999999939</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0049999999999368" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_0049999999999368</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1049999999999347" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_1049999999999347</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.2049999999999326" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_2049999999999326</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3049999999999304" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_3049999999999304</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4049999999999283" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_4049999999999283</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5049999999999262" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_5049999999999262</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.604999999999924" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_604999999999924</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7049999999999219" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_7049999999999219</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8049999999999198" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_8049999999999198</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9049999999999176" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/4_9049999999999176</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.0049999999999155" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_0049999999999155</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.1049999999999134" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_1049999999999134</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.2049999999999113" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_2049999999999113</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.3049999999999091" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_3049999999999091</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.404999999999907" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_404999999999907</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.5049999999999049" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_5049999999999049</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.6049999999999027" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_6049999999999027</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.7049999999999006" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_7049999999999006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.8049999999998985" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_8049999999998985</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.9049999999998963" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/5_9049999999998963</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.0049999999998942" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_0049999999998942</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.1049999999998921" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_1049999999998921</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.2049999999998899" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_2049999999998899</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.3049999999998878" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_3049999999998878</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.4049999999998857" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_4049999999998857</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.5049999999998835" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_5049999999998835</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.6049999999998814" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_6049999999998814</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.7049999999998793" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_7049999999998793</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.8049999999998771" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_8049999999998771</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6.904999999999875" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/6_904999999999875</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.0049999999998729" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_0049999999998729</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.1049999999998708" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_1049999999998708</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.2049999999998686" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_2049999999998686</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.3049999999998665" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_3049999999998665</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.4049999999998644" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_4049999999998644</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.5049999999998622" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_5049999999998622</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.6049999999998601" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_6049999999998601</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.704999999999858" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_704999999999858</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.8049999999998558" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_8049999999998558</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7.9049999999998537" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/7_9049999999998537</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.0049999999998516" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_0049999999998516</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.1049999999998672" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_1049999999998672</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.2049999999998828" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_2049999999998828</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.3049999999998985" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_3049999999998985</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.4049999999999141" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_4049999999999141</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.5049999999999297" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_5049999999999297</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.6049999999999454" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_6049999999999454</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.704999999999961" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_704999999999961</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.8049999999999766" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_8049999999999766</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8.9049999999999923" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/8_9049999999999923</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.0050000000000079" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_0050000000000079</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.1050000000000235" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_1050000000000235</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.2050000000000392" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_2050000000000392</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.3050000000000548" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_3050000000000548</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.4050000000000704" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_4050000000000704</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9.4250000000000735" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="106312 3" Format="HDF">displacement.h5:/Function/Displacement/9_4250000000000735</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

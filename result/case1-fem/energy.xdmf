@@ -1,0 +1,1444 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="mesh" GridType="Uniform">
+      <Topology TopologyType="Triangle" NumberOfElements="210442" NodesPerElement="3">
+        <DataItem Dimensions="210442 3" NumberType="Int" Format="HDF">energy.h5:/Mesh/mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XY">
+        <DataItem Dimensions="105822 2" Format="HDF">energy.h5:/Mesh/mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Elastic_Energy" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.0050000000000000001" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_0050000000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.030000000000000002" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_030000000000000002</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.054999999999999993" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_054999999999999993</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.080000000000000002" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_080000000000000002</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.10500000000000002" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_10500000000000002</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.13000000000000003" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_13000000000000003</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.15500000000000005" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_15500000000000005</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.18000000000000008" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_18000000000000008</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.2050000000000001" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_2050000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.23000000000000012" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_23000000000000012</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.25500000000000012" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_25500000000000012</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.28000000000000014" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_28000000000000014</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.30500000000000016" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_30500000000000016</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.33000000000000018" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_33000000000000018</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.3550000000000002" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_3550000000000002</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.38000000000000023" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_38000000000000023</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.40500000000000025" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_40500000000000025</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.43000000000000027" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_43000000000000027</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.45500000000000029" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_45500000000000029</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.48000000000000032" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_48000000000000032</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.50500000000000034" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_50500000000000034</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.53000000000000036" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_53000000000000036</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.55500000000000038" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_55500000000000038</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.5800000000000004" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_5800000000000004</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.60500000000000043" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_60500000000000043</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.63000000000000045" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_63000000000000045</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.65500000000000047" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_65500000000000047</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.68000000000000049" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_68000000000000049</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.70500000000000052" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_70500000000000052</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.73000000000000054" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_73000000000000054</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.75500000000000056" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_75500000000000056</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.78000000000000058" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_78000000000000058</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.8050000000000006" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_8050000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.83000000000000063" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_83000000000000063</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.85500000000000065" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_85500000000000065</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.88000000000000067" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_88000000000000067</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.90500000000000069" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_90500000000000069</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.93000000000000071" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_93000000000000071</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.95500000000000074" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_95500000000000074</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.98000000000000076" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/0_98000000000000076</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.0050000000000006" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_0050000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.03" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_03</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.0549999999999995" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_0549999999999995</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.079999999999999" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_079999999999999</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.1049999999999984" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_1049999999999984</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.1299999999999979" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_1299999999999979</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.1549999999999974" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_1549999999999974</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.1799999999999968" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_1799999999999968</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.2049999999999963" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_2049999999999963</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.2299999999999958" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_2299999999999958</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.2549999999999952" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_2549999999999952</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.2799999999999947" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_2799999999999947</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3049999999999942" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_3049999999999942</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3299999999999936" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_3299999999999936</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3549999999999931" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_3549999999999931</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3799999999999926" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_3799999999999926</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.404999999999992" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_404999999999992</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.4299999999999915" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_4299999999999915</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.454999999999991" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_454999999999991</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.4799999999999904" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_4799999999999904</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5049999999999899" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_5049999999999899</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5299999999999894" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_5299999999999894</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5549999999999888" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_5549999999999888</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5799999999999883" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_5799999999999883</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6049999999999878" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_6049999999999878</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6299999999999872" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_6299999999999872</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6549999999999867" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_6549999999999867</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6799999999999862" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_6799999999999862</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7049999999999856" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_7049999999999856</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7299999999999851" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_7299999999999851</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7549999999999846" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_7549999999999846</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.779999999999984" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_779999999999984</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.8049999999999835" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_8049999999999835</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.829999999999983" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_829999999999983</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.8549999999999824" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_8549999999999824</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.8799999999999819" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_8799999999999819</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9049999999999814" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_9049999999999814</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9299999999999808" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_9299999999999808</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9549999999999803" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_9549999999999803</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9799999999999798" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/1_9799999999999798</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0049999999999795" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_0049999999999795</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0299999999999789" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_0299999999999789</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0549999999999784" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_0549999999999784</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0799999999999779" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_0799999999999779</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.1049999999999773" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_1049999999999773</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.1299999999999768" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_1299999999999768</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.1549999999999763" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_1549999999999763</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.1799999999999757" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_1799999999999757</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.2049999999999752" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_2049999999999752</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.2299999999999747" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_2299999999999747</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.2549999999999741" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_2549999999999741</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.2799999999999736" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_2799999999999736</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.3049999999999731" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_3049999999999731</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.3299999999999725" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_3299999999999725</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.354999999999972" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_354999999999972</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.3799999999999715" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_3799999999999715</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.4049999999999709" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_4049999999999709</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.4299999999999704" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_4299999999999704</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.4549999999999699" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_4549999999999699</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.4799999999999693" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_4799999999999693</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.5049999999999688" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_5049999999999688</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.5299999999999683" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_5299999999999683</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.5549999999999677" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_5549999999999677</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.5799999999999672" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_5799999999999672</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.6049999999999667" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_6049999999999667</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.6299999999999661" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_6299999999999661</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.6549999999999656" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_6549999999999656</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.6799999999999651" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_6799999999999651</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.7049999999999645" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_7049999999999645</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.729999999999964" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_729999999999964</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.7549999999999635" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_7549999999999635</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.7799999999999629" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_7799999999999629</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.8049999999999624" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_8049999999999624</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.8299999999999619" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_8299999999999619</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.8549999999999613" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_8549999999999613</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.8799999999999608" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_8799999999999608</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.9049999999999603" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_9049999999999603</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.9299999999999597" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_9299999999999597</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.9549999999999592" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_9549999999999592</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.9799999999999587" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/2_9799999999999587</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.0049999999999581" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_0049999999999581</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.0299999999999576" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_0299999999999576</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.0549999999999571" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_0549999999999571</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.0799999999999566" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_0799999999999566</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.104999999999956" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_104999999999956</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.1299999999999555" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_1299999999999555</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.154999999999955" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_154999999999955</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.1799999999999544" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_1799999999999544</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.2049999999999539" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_2049999999999539</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.2299999999999534" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_2299999999999534</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.2549999999999528" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_2549999999999528</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.2799999999999523" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_2799999999999523</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.3049999999999518" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_3049999999999518</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.3299999999999512" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_3299999999999512</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.3549999999999507" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_3549999999999507</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.3799999999999502" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_3799999999999502</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.4049999999999496" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_4049999999999496</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.4299999999999491" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_4299999999999491</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.4549999999999486" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_4549999999999486</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.479999999999948" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_479999999999948</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.5049999999999475" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_5049999999999475</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.529999999999947" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_529999999999947</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.5549999999999464" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_5549999999999464</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.5799999999999459" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_5799999999999459</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6049999999999454" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_6049999999999454</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6299999999999448" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_6299999999999448</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6549999999999443" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_6549999999999443</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6799999999999438" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_6799999999999438</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7049999999999432" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_7049999999999432</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7299999999999427" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_7299999999999427</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7549999999999422" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_7549999999999422</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7799999999999416" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_7799999999999416</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8049999999999411" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_8049999999999411</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8299999999999406" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_8299999999999406</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.85499999999994" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_85499999999994</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8799999999999395" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_8799999999999395</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.904999999999939" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_904999999999939</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.9299999999999384" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_9299999999999384</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.9549999999999379" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_9549999999999379</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.9799999999999374" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/3_9799999999999374</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0049999999999368" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_0049999999999368</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0299999999999363" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_0299999999999363</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0549999999999358" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_0549999999999358</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0799999999999352" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_0799999999999352</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1049999999999347" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_1049999999999347</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1299999999999342" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_1299999999999342</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1549999999999336" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_1549999999999336</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1799999999999331" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_1799999999999331</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.2049999999999326" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_2049999999999326</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.229999999999932" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_229999999999932</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.2549999999999315" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_2549999999999315</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.279999999999931" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_279999999999931</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3049999999999304" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_3049999999999304</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3299999999999299" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_3299999999999299</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3549999999999294" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_3549999999999294</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3799999999999288" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_3799999999999288</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4049999999999283" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_4049999999999283</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4299999999999278" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_4299999999999278</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4549999999999272" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_4549999999999272</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4799999999999267" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_4799999999999267</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5049999999999262" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_5049999999999262</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5299999999999256" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_5299999999999256</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5549999999999251" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_5549999999999251</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5799999999999246" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_5799999999999246</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.604999999999924" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_604999999999924</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.6299999999999235" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_6299999999999235</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.654999999999923" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_654999999999923</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.6799999999999224" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_6799999999999224</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7049999999999219" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_7049999999999219</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7299999999999214" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_7299999999999214</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7549999999999208" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_7549999999999208</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7799999999999203" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_7799999999999203</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8049999999999198" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_8049999999999198</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8299999999999192" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_8299999999999192</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8549999999999187" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_8549999999999187</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8799999999999182" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_8799999999999182</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9049999999999176" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_9049999999999176</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9299999999999171" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_9299999999999171</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9549999999999166" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_9549999999999166</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.979999999999916" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/4_979999999999916</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.0049999999999155" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/5_0049999999999155</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.029999999999915" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/5_029999999999915</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.0549999999999145" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/5_0549999999999145</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Elastic_Energy" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5.074999999999914" />
+        <Attribute Name="Elastic_Energy" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="105822 1" Format="HDF">energy.h5:/Function/Elastic_Energy/5_074999999999914</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
